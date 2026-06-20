@@ -1,0 +1,32 @@
+{
+  "name": "discord-bot-boilerplate",
+  "version": "1.0.0",
+  "description": "Reusable TypeScript Discord.js bot starter following the Personal Discord bot architecture.",
+  "type": "module",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start:dev": "npm run verify && dotenv -e .env.dev -- tsx src/index.ts",
+    "start:prod": "npm run deploy:prod && dotenv -e .env.prod -- tsx src/index.ts",
+    "deploy:dev": "npm run verify && dotenv -e .env.dev -- tsx src/deploy-commands.ts dev",
+    "deploy:prod": "npm run verify && dotenv -e .env.prod -- tsx src/deploy-commands.ts prod",
+    "deploy:pod": "npm run deploy:prod",
+    "check": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.ts\"",
+    "verify": "npm run check && npm run lint"
+  },
+  "dependencies": {
+    "discord.js": "^14.26.4",
+    "dotenv-cli": "^11.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^25.9.2",
+    "eslint": "^9.17.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.18.2"
+  }
+}
