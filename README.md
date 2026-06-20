@@ -1,6 +1,6 @@
 # Discord Bot Boilerplate
 
-Reusable TypeScript Discord.js v14 starter for Personal Discord bot projects.
+A reusable TypeScript Discord.js v14 boilerplate for building Personal Discord bot projects with command registration, environment handling, and storage scaffolding.
 
 This boilerplate follows the shared architecture used by:
 

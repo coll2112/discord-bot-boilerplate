@@ -1,7 +1,7 @@
 {
   "name": "discord-bot-boilerplate",
   "version": "1.0.0",
-  "description": "Reusable TypeScript Discord.js bot starter following the Personal Discord bot architecture.",
+  "description": "Opinionated TypeScript Discord.js v14 boilerplate with command deployment, environment management, and guild-scoped storage.",
   "type": "module",
   "main": "dist/index.js",
   "engines": {
